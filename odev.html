@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Asiye Nur CİNAR 2016280059</title>
+</head>
+<body>
+
+    <h2>2019 Guz doneminin ilk odevi</h2>
+    <h1>Nur Cinar 2016280059 </h1>
+  <label for="id1">Metin kutusu 1</label>
+  <input type='text' id='sayi1' />
+<br>
+  <label for="id2">Metin kutusu 2</label>
+  <input type='text' id='sayi2' />
+<br><br>
+  <input type="button" value="TOPLA" onclick="buttononclick()" > </input>
+<br><br>
+  <label for="id3">Metin kutusu 3</label>
+  <input type='text' id='kelime1' />
+<br>
+  <label for="id4">Metin kutusu 4</label>
+  <input type='text' id='kelime2' />
+<br><br>
+    <input type="button" value="yapistir" onclick="birlestir()"> </input>
+  </body>
+    <script>
+
+  function buttononclick()
+  {
+
+    if(!isNaN(sayi1.value) && !isNaN(sayi2.value))
+    {
+      var toplam=Number(sayi1.value)+Number(sayi2.value);
+      alert(toplam);
+    }
+    else
+    {
+      alert("Girdiginiz degerler sayi olmali");
+    }
+ }
+
+
+ function birlestir()
+ {
+   var birlestir=(kelime1.value)+(kelime2.value);
+   alert(birlestir);
+ }
+
+    </script>
+ </html>
